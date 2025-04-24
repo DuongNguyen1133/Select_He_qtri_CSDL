@@ -57,10 +57,8 @@ WHERE hodem nhập hodem cần tìmta được 50 rows 'Nguyễn Thế'
 8. nhập sql để tìm xem có những sv nào có sđt khác chỉ 1 số so với sđt của em.
 
 9. BẢNG SV CÓ HƠN 9000 ROWS, HÃY LIỆT KÊ TẤT CẢ CÁC SV NGÀNH KMT, SẮP XẾP THEO TÊN VÀ HỌ ĐỆM, KIỂU TIẾNG  VIỆT, GIẢI THÍCH.
-WHERE lop LIKE '%KMT%':  
-Chỉ lấy các sinh viên thuộc lớp có chứa từ "KMT" trong tên lớp.  
-ORDER BY ten, ho_dem:  
-Truy vấn sẽ sắp xếp dữ liệu trước hết theo cột ten (Tên), và sau đó theo cột ho_dem (Họ đệm).    
+WHERE lop LIKE '%KMT%':   Chỉ lấy các sinh viên thuộc lớp có chứa từ "KMT" trong tên lớp.  
+ORDER BY ten, ho_dem:  Truy vấn sẽ sắp xếp dữ liệu trước hết theo cột ten (Tên), và sau đó theo cột ho_dem (Họ đệm).      
 COLLATE Vietnamese_CI_AS: Vietnamese_CI_AS là Collation hỗ trợ sắp xếp theo bảng chữ cái tiếng Việt (bao gồm cả dấu câu và ký tự tiếng Việt). Điều này rất quan trọng để đảm bảo kết quả sắp xếp chính xác với ngôn ngữ tiếng Việt.   
 ![Untitled9](https://github.com/user-attachments/assets/ed76a863-d7fc-4a8b-987f-627a0d013064)
 
