@@ -55,11 +55,25 @@ WHERE hodem nhập hodem cần tìmta được 50 rows 'Nguyễn Thế'
 ![Untitled7](https://github.com/user-attachments/assets/43a45a65-d8f2-4996-a8c7-27127eb24847)
 
 8. nhập sql để tìm xem có những sv nào có sđt khác chỉ 1 số so với sđt của em.
+  sau khi thực hiện câu lệnh truy vấn để tìm sdt khac 1s với sdt của em nhưng không có  số nào.  
+e thử 2s những cũng không thấy, đến khi thử 3s dduocjs ds các số như ở dưới hình  
+ ![image](https://github.com/user-attachments/assets/ea95dec6-5d92-4153-b090-c2c7a0899ea6)
 
-9. BẢNG SV CÓ HƠN 9000 ROWS, HÃY LIỆT KÊ TẤT CẢ CÁC SV NGÀNH KMT, SẮP XẾP THEO TÊN VÀ HỌ ĐỆM, KIỂU TIẾNG  VIỆT, GIẢI THÍCH.
+
+10. BẢNG SV CÓ HƠN 9000 ROWS, HÃY LIỆT KÊ TẤT CẢ CÁC SV NGÀNH KMT, SẮP XẾP THEO TÊN VÀ HỌ ĐỆM, KIỂU TIẾNG  VIỆT, GIẢI THÍCH.
 WHERE lop LIKE '%KMT%':   Chỉ lấy các sinh viên thuộc lớp có chứa từ "KMT" trong tên lớp.  
 ORDER BY ten, ho_dem:  Truy vấn sẽ sắp xếp dữ liệu trước hết theo cột ten (Tên), và sau đó theo cột ho_dem (Họ đệm).      
 COLLATE Vietnamese_CI_AS: Vietnamese_CI_AS là Collation hỗ trợ sắp xếp theo bảng chữ cái tiếng Việt (bao gồm cả dấu câu và ký tự tiếng Việt). Điều này rất quan trọng để đảm bảo kết quả sắp xếp chính xác với ngôn ngữ tiếng Việt.   
 ![Untitled9](https://github.com/user-attachments/assets/ed76a863-d7fc-4a8b-987f-627a0d013064)
 
+11. HÃY NHẬP SQL ĐỂ LIỆT KÊ CÁC SV NỮ NGÀNH KMT CÓ TRONG BẢNG SV (TRÌNH BÀY QUÁ TRÌNH SUY NGHĨ VÀ GIẢI NHỮNG VỨNG MẮC)
+Sau khi nghiên cứu cách làm cơ bản để liệt kê ra ds nữ trong ngành KHTT em nhận thấy ở DS SV demo ta chưa có trường gioi_tinh   
+Nếu thêm trường gioi_tinh cho SV KHTT → ta có 2 cách gán trường gioi_tinh thô cho all về NULL, sau đó Nam=1, Nữ=0 , nhưng cũng khá lâu và có khoảng 250 rows sv kmt     
+C2 thì ta lọc ra  
+lop LIKE “%KHTT%”;      
+Lọc danh sách sinh viên trong lớp có chữ “KHTT”.   
+ten IN (‘Nhung’, ‘Trang’, ‘Hằng’, ‘Linh’, ‘Yến’, ‘Ánh’, ...);   
+Điều kiện để lọc tên thường gặp của nữ.   
+Sắp xếp kết quả theo tên để dễ dàng kiểm tra.   
+![image](https://github.com/user-attachments/assets/bb3973f9-8bcf-4588-9710-f66cfce79a0d)
 
